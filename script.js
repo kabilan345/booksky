@@ -35,7 +35,11 @@ addbtn.addEventListener("click",function(event){
     <button onclick="deletebook(event)">DELETE</button>`
     container.append(div)
     popupbox.style.display="none" 
-    popupoverlay.style.display="none"   
+    popupoverlay.style.display="none" 
+    booktitleinput.value = "";
+    bookauthorinput.value = "";
+    bookdescriptioninput.value = "";
+
 })
 
 //action on delete button
