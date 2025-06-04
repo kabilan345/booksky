@@ -147,3 +147,104 @@ h1,h4{
 .popup-box textarea:focus{
     outline: none;
 }
+
+/* Large desktops (1200px and above) */
+@media screen and (min-width: 1200px) {
+    .box-container {
+        width: 20%;
+    }
+
+    .popup-box {
+        width: 40%;
+        right: 30%;
+    }
+}
+
+/* Medium screens: Small laptops and tablets landscape (992px to 1199px) */
+@media screen and (max-width: 1199px) {
+    .box-container {
+        width: 40%;
+    }
+
+    .popup-box {
+        width: 60%;
+        right: 20%;
+    }
+}
+
+/* Tablets portrait and large phones (768px to 991px) */
+@media screen and (max-width: 991px) {
+    .box-container {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .popup-box {
+        width: 80%;
+        right: 10%;
+    }
+
+    .popup-box input,
+    .popup-box textarea {
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+/* Small tablets and phones landscape (600px to 767px) */
+@media screen and (max-width: 767px) {
+    .box-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .popup-box {
+        width: 90%;
+        right: 5%;
+        padding: 30px;
+    }
+
+    .add-icon {
+        font-size: 24px;
+        padding: 15px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .popup-box h1 {
+        font-size: 22px;
+    }
+
+    .popup-box button {
+        font-size: 14px;
+    }
+}
+
+/* Phones portrait (below 600px) */
+@media screen and (max-width: 599px) {
+    .box-container {
+        font-size: 14px;
+    }
+
+    .popup-box {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .popup-box input,
+    .popup-box textarea {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .popup-box button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .add-icon {
+        font-size: 22px;
+        padding: 12px 18px;
+    }
+}
